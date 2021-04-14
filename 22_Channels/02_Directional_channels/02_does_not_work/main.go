@@ -8,8 +8,9 @@ func main() {
 	c <- 42
 	c <- 43
 
-	fmt.Println(<-c)
-	fmt.Println(<-c)
+	// BELOW CODE DOES NOT WORK
+	// fmt.Println(<-c)
+	// fmt.Println(<-c)
 	fmt.Println("------")
 	fmt.Printf("%T\n", c)
 }
